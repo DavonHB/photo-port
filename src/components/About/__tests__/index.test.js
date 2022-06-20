@@ -1,12 +1,11 @@
 import React from 'react';
-// react testing library
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import About from '...';
 
 afterEach(cleanup);
 
-describe('About componnent', () => {
+describe('About component renders', () => {
     it('renders', () => {
         render(<About />);
     });
